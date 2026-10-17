@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa"><title>IdeaCheck</title>
+  <link rel="stylesheet" href="/static/styles.css"><link rel="stylesheet" href="/static/mode.css">
+</head>
+<body>
+    <header class="top"><a class="brand" href="/">✳ IdeaCheck</a><div class="headerActions"><div class="badges"><span class="badge">Local-first</span><span class="badge muted">Evidence-linked review</span></div><button id="themeToggle" class="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">☾ <span>Dark</span></button></div></header>
+  <main>
+    <section class="intro">
+      <div class="eyebrow">A CONSTRUCTIVE REVIEW BEFORE YOU BUILD</div>
+      <h1>Find what your plan<br><span>forgot.</span></h1>
+      <p>Describe your project. IdeaCheck looks for assumptions, missing decisions, constraints, and failure paths that may deserve attention.</p>
+      <div class="ethics">A first-pass review, not a verdict. Missing details are described as gaps in the information you supplied, not proof that your project lacks a capability.</div>
+    </section>
+    <section class="panel" id="inputPanel">
+      <div class="panelHead"><div><h2>What are you planning?</h2><p>Share the problem, intended users, proposed solution, and any constraints you know.</p></div><span class="step">PROJECT REVIEW</span></div>
+      <div id="samples" class="samples"><button id="sampleMessMind" class="sample" type="button">Try the MessMind example</button></div>
+      <div class="urlReview"><label for="projectUrl">Or review a public project link</label><div class="urlReviewControls"><input id="projectUrl" type="url" maxlength="2000" placeholder="https://github.com/owner/project or https://your-project.onrender.com"><button id="analyzeUrlBtn" class="secondary" type="button">Review link</button></div><p class="inputHint">Public GitHub repositories, Render deployments, and readable public websites are supported. The app fetches page text only; it does not run the site.</p></div>
+      <div class="aiOption"><label><input id="useLocalAi" type="checkbox" disabled> Add a local AI review (optional)</label><p id="aiStatus" class="inputHint">Checking for Ollama…</p></div>
+      <div class="inputDivider"><span>or describe it yourself</span></div>
+      <label for="artifactText">Project idea or plan</label>
+      <textarea id="artifactText" rows="11" maxlength="20000" placeholder="What problem are you solving? Who is it for? How will it work? What data, services, people, or resources does it depend on? What would success look like?"></textarea>
+      <p class="inputHint">You can paste an early idea, project spec, requirements, or implementation plan. More context makes the review more specific.</p>
+      <div class="inputFoot"><span id="wordCount">0 words · more detail helps</span><button id="analyzeBtn" class="primary" type="button">Review my project <span>→</span></button></div>
+      <details class="privacy"><summary>How your project information is used</summary><p>Pasted text is analyzed locally. If you enable local AI review, the text is sent only to Ollama running on this computer; no hosted AI service is used. For a link review, this app fetches readable text from the public page. The extracted text and report are stored in local SQLite. Local files are not encrypted by this app.</p></details>
+    </section>
+    <section id="progress" class="panel hidden" aria-live="polite"><h2>Reviewing your project plan…</h2><div id="stageList"></div><div class="bar"><i id="progressBar"></i></div><p class="small">Checking what is stated, what is unclear, and what may need a decision.</p></section>
+    <section id="results" class="hidden"></section>
+    <footer><span>IdeaCheck · Find what your plan forgot</span><a href="/api/health">API health</a><span>Local, rule-based first pass</span></footer>
+  </main>
+  <script src="/static/app.js?v=ideacheck-ai-3" defer></script>
+</body></html>

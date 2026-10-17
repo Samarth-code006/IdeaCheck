@@ -1,0 +1,53 @@
+providers:
+  llm: fake
+  embedding: tfidf
+  llm_base_url: ""
+  llm_model: ""
+  llm_api_key_env: LLM_API_KEY
+  llm_rpm: 15
+  llm_max_concurrency: 2
+  llm_max_retries: 3
+  llm_retry_backoff_seconds: 8
+  embed_model: sentence-transformers/all-MiniLM-L6-v2
+  rerank_model: null
+cache:
+  mode: read_write
+  dir: data/cache
+retrieval:
+  bm25_k: 100
+  dense_k: 100
+  rrf_k: 60
+  rerank_in: 30
+  final_k: 10
+  aggregate: max_chunk
+compare:
+  calibration: {cos_lo: 0.25, cos_hi: 0.80}
+  feature_pair_min_cos: 0.45
+  feature_pairs_per_feature: 3
+  lexical_feature_verdicts: {same_min: 0.75, partial_min: 0.35}
+  weights: {problem: 0.35, feature: 0.50, tech: 0.15}
+  label_thresholds: {near_duplicate: 80, strong_overlap: 60, partial_overlap: 40, related: 20}
+  min_evidence_matches_for_strong: 2
+novelty:
+  weights: {problem: 0.25, feature: 0.35, neighbors: 0.25, whitespace: 0.15}
+  commodity_min_repos: 3
+  gap_threshold: 0.45
+readme:
+  thin_chars: 300
+  min_chars_for_corpus: 400
+  chunk_chars: 1200
+github:
+  per_page: 100
+  max_pages_per_query: 10
+  min_readme_chars: 400
+  retry_attempts: 4
+  timeout_seconds: 15
+  max_backoff_seconds: 8
+analysis:
+  min_words: 20
+  max_proposal_chars: 20000
+  final_k: 10
+recommendations:
+  count: 5
+  max_gaps: 8
+server: {host: 127.0.0.1, port: 8000}

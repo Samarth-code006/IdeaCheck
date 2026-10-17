@@ -1,0 +1,16 @@
+__pycache__/
+.pytest_cache/
+.DS_Store
+.venv/
+venv/
+.env
+data/*.sqlite3
+data/*.sqlite3-*
+data/cache/
+*.py[cod]
+*.log
+artifacts/.DS_Store
+artifacts/ideacheck_review_demo/audio/
+artifacts/ideacheck_review_demo/frames/
+artifacts/ideacheck_review_demo/silent.mp4
+artifacts/narrator-voice-samples/

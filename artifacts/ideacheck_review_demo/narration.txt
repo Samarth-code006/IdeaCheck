@@ -1,0 +1,15 @@
+Welcome to IdeaCheck. It gives your plan a careful first pass, so you can spot open questions while there is still time to resolve them.
+
+Let us review MessMind, a college food-demand idea. The prompt combines dish-level forecasting, student attendance, food-waste tracking, and kitchen recommendations.
+
+IdeaCheck asks how the team will judge forecast quality. The prompt gives no baseline or error metric, no way to measure waste prevented, and no plan for missing records across holidays and weekdays.
+
+Next steps: choose a forecast horizon, compare with a rolling average on a time-based holdout, and record prepared, served, and leftover quantities for every dish. This gives the team a testable first experiment.
+
+Now review a public GitHub link. QueueSense provides live queue and wait-time tools for places such as canteens, restaurants, clinics and offices. IdeaCheck fetches its README and analyzes what the repository documents.
+
+The README describes customer and operator sites, QR tickets, staff and display screens, and wait-time ranges. It also explains hosting, MongoDB storage, tests and known limits.
+
+The QueueSense README review flags four things to verify: a measurable user outcome, who can access customer data and when it is deleted, evidence from user research, and named delivery owners. These are gaps in the README, not proof those plans are missing from the project.
+
+IdeaCheck reads and reviews the README. It does not execute the site or audit the code. Use its findings as prompts for your next project conversation.

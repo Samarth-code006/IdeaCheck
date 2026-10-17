@@ -1,0 +1,56 @@
+[
+  {
+    "repo_id": "jetbrains-research/sosed",
+    "url": "https://github.com/JetBrains-Research/sosed",
+    "title": "Sosed — similar project search",
+    "description": "An embedding-based approach to detect similar software projects.",
+    "topics": ["similarity search", "embeddings", "github"],
+    "readme": "An embedding-based approach to detect similar software projects. In the end, for a given project, the tool will output its nearest neighbors among these projects, sorted by their similarity. The output can explain which clusters contributed to similarity.",
+    "evidence_sentence": "An embedding-based approach to detect similar software projects."
+  },
+  {
+    "repo_id": "mubelotix/simrepo",
+    "url": "https://github.com/Mubelotix/SimRepo",
+    "title": "SimRepo — repository discovery",
+    "description": "A repository recommendation engine that helps people discover similar repositories.",
+    "topics": ["github", "recommendations", "repositories", "embeddings"],
+    "readme": "SimRepo enhances GitHub by showing similar projects in a repository's sidebar. Discover similar repositories to find the best option for your needs. It supports multiple chart view modes and repository inputs.",
+    "evidence_sentence": "Discover similar repositories to find the best option for your needs."
+  },
+  {
+    "repo_id": "pranaymakkena/food-demand-predictor",
+    "url": "https://github.com/pranaymakkena/food-demand-predictor",
+    "title": "Food Demand Predictor — college canteen meals and waste",
+    "description": "College canteen forecasting project that predicts meal attendance, recommends quantities for dishes such as rice and chapati, and uses actual-consumption feedback to improve future estimates.",
+    "topics": ["food demand forecasting", "college canteen", "food waste", "meal feedback", "XGBoost"],
+    "readme": "The public project README describes an AI-powered food demand and waste prediction system for college canteens. It forecasts daily meal attendance from historical meal data, recommends dish quantities including rice, curry, and chapati, and records actual consumption as feedback. It describes an XGBoost prediction model, an administrator dashboard with waste charts and demand trends, and confidence scores. The listed stack includes React, FastAPI, PostgreSQL, Pandas, Scikit-learn, and XGBoost.",
+    "evidence_sentence": "The README describes college canteen meal attendance forecasting, dish-level quantity recommendations, and consumption feedback."
+  },
+  {
+    "repo_id": "Anuushreee/EcoServe-AI",
+    "url": "https://github.com/Anuushreee/EcoServe-AI",
+    "title": "EcoServe AI — mess meal predictor",
+    "description": "College and hostel mess tool for meal attendance forecasting and cooking recommendations, with waste analytics and a synthetic-data demonstration.",
+    "topics": ["hostel mess", "meal forecasting", "food waste", "sustainability", "Streamlit"],
+    "readme": "The public project README describes an AI-powered mess meal predictor for college and hostel dining. It forecasts attendance for breakfast, lunch, and dinner using calendar patterns, dish popularity, exam schedules, and weather, then provides cooking recommendations. It includes a waste analytics dashboard and uses a synthetic dataset for demonstration. The README says it uses classical machine-learning regressors and deterministic explanations without paid APIs.",
+    "evidence_sentence": "The README describes meal attendance forecasting for college and hostel messes, plus cooking recommendations and waste analytics."
+  },
+  {
+    "repo_id": "Riya-1106/CampusCurb",
+    "url": "https://github.com/Riya-1106/CampusCurb",
+    "title": "CampusCurb — smart canteen management",
+    "description": "Campus canteen platform combining machine-learning food demand estimates with inventory, ordering, and food waste analytics.",
+    "topics": ["campus canteen", "demand forecasting", "food waste", "inventory", "Flutter"],
+    "readme": "The public project README describes a campus canteen system that predicts food demand from historical orders, student behavior, time slots, and weather. It recommends preparation quantities and tracks prepared, sold, and wasted food. The broader platform also covers student ordering, attendance, inventory, operator workflows, and analytics; demand prediction is one feature among several. The listed stack includes Flutter, Python, Firebase, and Scikit-learn.",
+    "evidence_sentence": "The README describes campus canteen demand forecasting, food preparation recommendations, and waste tracking."
+  },
+  {
+    "repo_id": "shanmukh666/FOODFLOW-AI-AUTONOMOUS-DEMAND-PREDICTION-SYSTEM",
+    "url": "https://github.com/shanmukh666/FOODFLOW-AI-AUTONOMOUS-DEMAND-PREDICTION-SYSTEM",
+    "title": "FoodFlow AI — restaurant demand forecasting",
+    "description": "Restaurant menu-item demand forecasting using sales history and contextual signals, with inventory optimization and waste-risk insights.",
+    "topics": ["restaurant demand forecasting", "food waste", "time series", "inventory", "XGBoost"],
+    "readme": "The public project README describes a restaurant-focused system that forecasts daily demand for individual menu items from sales history and contextual signals such as weather and local events. It describes time-series feature engineering, an API, and a dashboard for demand predictions and operational recommendations. This is a broader restaurant use case rather than a campus mess product, but its per-item forecasting and waste-reduction goals are relevant comparisons.",
+    "evidence_sentence": "The README describes per-menu-item demand forecasts and waste-reduction recommendations for restaurant operations."
+  }
+]
